@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityUI">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/SwarmSetuptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Swarm Setup"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/SwarmNumbertext"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:gravity="center_vertical"
+                android:text="Swarm Entities Number" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/SwarmNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stepSize="1"
+                android:value="20"
+                android:valueFrom="1"
+                android:valueTo="400" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/SwarmSizetext"
+                android:layout_width="147dp"
+                android:layout_height="49dp"
+                android:gravity="center_vertical|right"
+                android:text="Swarm Size" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/SwarmSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stepSize="1"
+                android:value="10"
+                android:valueFrom="1"
+                android:valueTo="50" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/SwarmSpeedtext"
+                android:layout_width="148dp"
+                android:layout_height="49dp"
+                android:gravity="center_vertical|right"
+                android:text="Swarm Speed" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/SwarmSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stepSize="0.1"
+                android:value="0.5"
+                android:valueFrom="0.1"
+                android:valueTo="1.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/AttackerRangeText"
+                android:layout_width="148dp"
+                android:layout_height="49dp"
+                android:gravity="center_vertical|right"
+                android:text="Attacker Range" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/AttackerRange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stepSize="10"
+                android:value="300"
+                android:valueFrom="10"
+                android:valueTo="600" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/BoidsSetuptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boids Setup"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/TurnFtext"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:gravity="center_vertical"
+                android:text="Turn Factor" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/TurnF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stepSize="1"
+                android:value="20"
+                android:valueFrom="1"
+                android:valueTo="50" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/VisualRangeText"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:gravity="center_vertical"
+                android:text="Visual Range" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/VisualR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stepSize="1"
+                android:value="40"
+                android:valueFrom="1"
+                android:valueTo="100" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/ProtectedRangeText"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:gravity="center_vertical"
+                android:text="Protected Range" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/ProtectedR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stepSize="1"
+                android:value="8"
+                android:valueFrom="1"
+                android:valueTo="20" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/MaxSpeedText"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:gravity="center_vertical"
+                android:text="Max Speed" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/maxSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stepSize="1"
+                android:value="45"
+                android:valueFrom="32"
+                android:valueTo="64" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/MinSpeedText"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:gravity="center_vertical"
+                android:text="Min Speed" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/minSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stepSize="1"
+                android:value="15"
+                android:valueFrom="1"
+                android:valueTo="32" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="Start Simulation" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
